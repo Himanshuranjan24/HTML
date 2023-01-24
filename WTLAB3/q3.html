@@ -1,0 +1,106 @@
+<!--3. Write a program in html to design the following registration form
+a. First name---text box
+b. Last name---text box
+c. Password---password box
+d. Re-enter Password---password box
+e. Gender---3 radio buttons for male, female, other
+f. Hobbies---check box(any 4 hobbies)
+g. Date of Birth----drop down list (Min 5 fields for day, month
+and year)
+h. Address--text area box
+i. email--email type
+j. url----url type
+k. Submit---button
+l. reset--reset button
+J. put everything with in a single unit using fieldset and legend tags and give legend
+name as Facebook Registration Form-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Facebook Form</title>
+  </head>
+  <style>
+    body {
+      font-family: "Segoe UI";
+      font-size: smaller;
+      background-color: aqua;
+    }
+  </style>
+  <body>
+    <center>
+      <a href="https://www.facebook.com">
+        <img
+          src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+          alt="www.facebook.com"
+          width="768"
+          height="270"
+        />
+      </a>
+      <hr />
+      <form>
+        <fieldset>
+          <legend>Facebook Registration Form</legend>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" />
+          <br /><br />
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" />
+          <br /><br />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" />
+          <br /><br />
+          <label for="rePassword">Re-enter Password:</label>
+          <input type="password" id="rePassword" name="rePassword" />
+          <br /><br />
+          <label for="gender">Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+          <br /><br />
+          <label for="hobbies">Hobbies:</label>
+          <input type="checkbox" id="hobby1" name="hobbies" value="hobby1" />
+          <label for="hobby1">swimming</label>
+          <input type="checkbox" id="hobby2" name="hobbies" value="hobby2" />
+          <label for="hobby2">dancing</label>
+          <input type="checkbox" id="hobby3" name="hobbies" value="hobby3" />
+          <label for="hobby3">Cricket</label>
+          <input type="checkbox" id="hobby4" name="hobbies" value="hobby4" />
+          <label for="hobby4">reading</label>
+          <br /><br />
+          <label for="dob">Date of Birth:</label>
+          <select id="day" name="day">
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+          <select id="month" name="month">
+            <option value="1">January</option>
+            <option value="2">February</option>
+          </select>
+          <select id="year" name="year">
+            <option value="2022">2023</option>
+            <option value="2021">2022</option>
+          </select>
+          <br /><br />
+          <label for="address">Address:</label>
+          <textarea id="address" name="address"></textarea>
+          <br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <br /><br />
+          <label for="url">URL:</label>
+          <input type="url" id="url" name="url" />
+          <br /><br />
+          <input
+            type="submit"
+            value="Submit"
+            onclick="alert('Form Submitted')"
+          />
+          <input type="reset" value="Reset" />
+        </fieldset>
+      </form>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!--1. Write a program to design your web page using inline, internal external style
+sheets separately. 
+a. Give background color to your web page
+b. Make paragraph and headings with different colors
+c. Take few H1 tags and design two of them with same colors and two of
+them with different colors.
+d. Hover a Text-when you place your cursor on the text its background
+color should be changed
+e. use div tag to take a section in web page in which you will have two
+headings(h1,h2) and apply different font-family,font-size,border,padding,margin to
+them-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web Page</title>
+    <style>
+      body {
+        background-color: aqua;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: rgb(123, 64, 224);
+      }
+
+      p {
+        color: rgb(128, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inline Style -->
+    <h1 style="color: red">
+        You are what you believe in. You become that which you believe you can become.
+    </h1>
+    <h1 style="color: rgb(76, 0, 255)">
+        Man is made by his belief. As he believes, so he is
+    </h1>
+    <h1 style="color: rgb(32, 218, 103)">
+        You are only entitled to the action, never to its fruits
+    </h1>
+    <h1 style="color: rgb(216, 112, 164)">
+        Now I am become Death, the destroyer of worlds.
+    </h1>
+
+    <div
+      style="
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        border: 2px solid black;
+        padding: 15px;
+        margin: 25px;
+      "
+    >
+      <h1>
+        Arise, slay thy enemies, enjoy a prosperous kingdom
+      </h1>
+      <h2 style="font-family: Verdana, sans-serif; font-size: 14px">
+        You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions.
+      </h2>
+    </div>
+  </body>
+</html>
