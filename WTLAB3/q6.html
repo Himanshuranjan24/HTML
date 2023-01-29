@@ -1,0 +1,32 @@
+<!--Write a Program in HTML to design the following website using frame concept.Use target attribute to open the 
+google and microsoft websites in frame 2 and frame 3.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Website using frames</title>
+  <style>
+    .gif{
+      background-image: url(http://www.google.com/logos/doodles/2021/margherita-hacks-99th-birthday-6753651837108959-2xa.gif);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+    .png{
+      background-image: url(https://trendystockcharts.com/wp-content/uploads/2017/04/MSFT-Logo-866W-900x400.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<frameset rows="50%,50%" cols="25%,25%">
+  <frame name="1" class="gif" >
+  <frame name="2" src="https://web.archive.org/web/20230127164312/https://www.google.co.in/">
+  <frame name="3" class="png">
+  <frame name="4" src="https://web.archive.org/web/20230121202408/https://www.microsoft.com/en-in/">
+</frameset>
+</html>
